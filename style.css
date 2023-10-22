@@ -1,180 +1,112 @@
-/* body{
-    display: flex;
-    justify-content: center;
-    margin-top: 26px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Nosifer&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;700;900&display=swap');
 
-.wrapper{
-   
-    width: 370px;
-    padding: 25px 30px ;
-    border-radius: 7px;
-    background: #ffffff;
-    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
-  }
-  header{
-    font-size: 28px ;
-    font-weight: 500;
-    text-align: center;
-  }
-  form{
-    margin: 35px 0 25px;
-  }
-  .row{
-    display: flex;
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-label{
-    font-size: 18px;
-    margin-bottom: 5px;
+/* Body */
+body {
+  font-family: 'Lilita One',sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #55575a;
 }
-.row:nth-child(2)label{
-    font-size: 18px;
-}
-form:wherw(textarea,select,button){
-    outline: none;
-    width: 100%;
-    height: 100px;
-    border: none;
-    border-radius: 5px;
-}
-textarea{
-    resize: none;
-    height: 110px;
-    font-size: 15px;
-    padding: 8px 10px ;
-    border: 1 px solid #999;
-}
-.outer{
-height: 47px;
-display: flex;
-padding: 0 10px;
-align-items: center;
-border-radius: 5px;
-justify-content: center;
-border: 1px solid #999;
-}
-select{
-    font-size: 14px;
-    background: none;
-}
-.row select::-webkit-scrollbar{
-    width: 8px;
-}
-.row select::-webkit-scrollbar-track{
-    background: #fff;
-}
-.row select::-webkit-scrollbar-thumb{
-    background: #888;
-    border-radius: 8px;
-    border-right: 2px solid #ffffff;
-}
-form button{
-    height: 52px;
-    color: #fff;
-    font-size: 17px;
-    cursor: pointer;
-    margin-top: 10px;
-    background: #675AFE;
-    transition:  0.3s ease;
-}
-form button:hover{
-    background: #4534fe;
-}
-@media(max-width:400px){
-    .wrapper{
-        max-width: 345px;
-        width: 100%;
-    }
-} */
-
+/* Header */
 header {
-  background-color: #071626;
+  background-color: #55575a;
+  border-radius: 7px;
+  font-family: 'Nosifer',sans-serif;
+  text-align: center;
   color: white;
   padding: 10px;
   font-size: 24px;
+  box-shadow: 0px 28px 28px -13px rgba(24, 24, 24, 0.88);
+-webkit-box-shadow: 0px 28px 28px -13px rgba(13, 14, 15, 0.88);
 }
 
+/* Form */
 form {
   margin-top: 20px;
+
 }
 
-
-label {
+/* Label */
+label { 
   display: block;
   margin-bottom: 5px;
 }
 
-
+/* Textarea */
 textarea {
   width: 100%;
+  border-radius: 7px;
   height: 100px;
   padding: 5px;
 }
 
-
+/* Wrapper */
 .wrapper {
+  
   max-width: 800px;
   margin: 0 auto;
 }
 
-
+/* Row */
 .row {
+  
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-
+/* Outer */
 .outer {
+  
   position: relative;
 }
 
-
+/* Label for Select Voice */
 label[for="select voice"] {
   display: inline-block;
+  
   margin-right: 10px;
 }
 
-
+/* Select */
 select {
+  border-radius: 7px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url('data:image/svg+xml;utf8,<svg fill="#2c3e50" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M29.7 11H2.3C.9 11 0 11.9 0 13.3V18.7c0 1.4.9 2.3 2.3 2.3h27.3c1.3 0 2.3-.8 2.3-2.3V13.3c0-1.4-1.1-2.3-2.3-2.3z"/><path d="m16 23.6l-8.1-5.1c-.6-.4-1.2-.1-1.2.6v9.9c0 .7.6 1 1.2.6l8.1-5.1c.3-.2.5-.5.5-.9v-.6c0-.4-.2-.7-.5-.9zm1.8-2c.2.2.2.5 0 .7l-8.1 5.1c-.6.4-1.2.1-1.2-.6V15.1c0-.7.6-1 1.2-.6l8.1 5.1z"/></svg>');
   background-repeat: no-repeat;
-
   background-position: right center;
   background-size: 18px;
-  padding-right: 10px;
+  padding-right: 80px;
   font-size: 16px;
   width: 100%;
-  height: 34px;
+  height: 44px;
   border: none;
   border-bottom: 2px solid #2c3e50;
-  color: #2c3e50;
+  color: #ffffff;
+  background-color: #515152;;
 }
 
-
+/* Button */
 button {
   display: block;
   margin-top: 20px;
   background-color: #2c3e50;
   color: white;
   padding: 10px 20px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
   font-size: 16px;
 }
 
-
+/* Focus */
 :focus {
   outline: none;
   box-shadow: 0 0 3px #2c3e50;
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-}
+
+
